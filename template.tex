@@ -1,0 +1,193 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Software}\\\textbf{Developer},
+        \textbf{Machine}\\\textbf{Learning},
+        \textbf{~~~Full Stack~~~}\\\textbf{~~Web Dev~~},
+        \textbf{~~~~Medical~~~~}\\\textbf{Devices},
+        \textbf{~Statistical~}\\\textbf{Analysis},
+        \textbf{Unit}\\\textbf{~~Testing~~},
+        \textbf{~~~~~~OOP~~~~~~~}
+    }
+}
+
+% Programming skill bars
+\programming{{Ruby $\textbullet$ C++  $\textbullet$ MongoDB  / 3}, {Java $\textbullet$ SQL $\textbullet$ MATLAB / 3.5}, {HTML5 $\textbullet$ JS $\textbullet$ CSS / 5}}
+
+% Projects text
+\projects{
+\textbf{Front-end}
+        \\
+        ReactJS (Flux, Redux),
+        JQuery,
+        AJAX,
+        SCSS/SASS,
+        Bootstrap,
+        Responsive Design
+        \\
+        \textbf{Back-End}
+        \\
+        Ruby on Rails,
+        NodeJS (Express),
+        PostgreSQL,
+        Sequelize,
+        Mongoose,
+        RESTful APIs,
+        Third Party APIs (Google Maps, Soundcloud, NASA)
+        \\
+        \textbf{Other}
+        \\
+        Git/Github,
+        LaTeX
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Justin Clowney} % Your name
+\cvjobtitle{Software Developer} % Job
+% title/career
+
+\cvlinkedin{/in/jclowney}
+\cvgithub{jclowney}
+\cvnumberphone{(281) 755 3231} % Phone number
+\cvsite{justinclowney.com} % Personal website
+\cvmail{justinclowney@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{May 2017-}
+    	{Present}
+        {The Iron Yard \textnormal{- Full Stack Web Dev Coding Bootcamp}}
+        {Houston, Texas}
+        {}
+        {}
+	\twentyitem
+    	{2012-}
+    	{2016}
+        {BSc. Biomedical Engineering \textnormal{GPA: (3.3/4.0)}}
+        {Texas A\&M University}
+        {}
+        {}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+\section{Research}
+\begin{twenty}
+	\twentyitem
+    	{2015}
+		{}
+        {BSc. Undergraduate Research Assistant}
+        {{Texas A\&M University}}
+        {}
+        {
+       	\textbf{Thesis}: Efficacy of Noninvasive Glucose Sensors After Clinical Animal Trials
+        {\begin{itemize}
+        \item Programmed algorithm in MATLAB for extracting two time-resolved components of a single luminescence signal acquired from sensors
+        \item Created a LabVIEW program and GUI for automatically measuring oxygen concentrations in solution using an electrode instrument
+        \item Constructed testing system and developed program for characterizing response of glucose sensors to varying continuous glucose concentrations 
+        \item \textbf{Tools}: MATLAB, LabVIEW, COMSOL, Solidworks \vspace{2mm}
+		\end{itemize}}
+        }
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{July 2017}
+		{}
+        {Polybus - Hackathon Project}
+        {AngelHack}
+        {}
+        {\begin{itemize}
+        \item Made a full-stack application that connects medical missions in third world countries to volunteers and physicians.
+        \item \textbf{Tools}: JS, PostgreSQL, Loopback
+        \end{itemize}}
+        \\
+        \twentyitem
+    	{June 2017}
+		{}
+        {Soundcloud App}
+        {The Iron Yard}
+        {}
+        {\begin{itemize}
+        \item Practiced API calls by constructing a site that allows to search for songs by artist, and plays them back with an equalizer
+        \item \textbf{Tools}: JS, HTML, CSS
+        \end{itemize}}
+        \\
+\twentyitem
+    	{Sep 2015 -}
+		{May 2016}
+        {Smart Intra-Venous System}
+        {{Texas A\&M University}}
+        {}
+        {\begin{itemize}
+        \item Worked in collaboration with Quest Medical Inc. to find a niche in the IV market
+        \item Integrated a mass flow sensor, stepper motor, Arduino board, and a custom 3D printed case
+        \item Programmed negative feedback system using LabVIEW and an Arduino board
+        \item Utilized Agile methodology to mediate the design process. Maintained a Design History File to illustrate version history control.
+        \item \textbf{Tools}: LabVIEW, Arduino, Solidworks
+        \end{itemize}}
+        \\
+	\twentyitem
+    	{Oct 2014}
+		{}
+        {Optical Heart Rate Monitor}
+        {Texas A\&M University}
+        {}
+        {
+        {\begin{itemize}
+        \item Constructed a functional pulse oximeter to measure heart rate
+        \item Designed and soldered a circuit that takes the raw signal from a photodiode, filter out specific ranges of frequencies, and amplify the rest in order to have an LED solely light up with each heart beat
+        \\
+    \end{itemize}}
+        }
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+\section{Leadership}
+\begin{twenty}
+\twentyitem{2015-2016}{}{President}{Council of Undergraduate Research in Engineering}{}{}
+\twentyitem{2015-2016}{}{Treasurer}{Engineering World Health}{}{}
+\twentyitem{2014-2015}{}{Treasurer}{Council of Undergraduate Research in Engineering}{}{}
+\end{twenty}
+\end{document} 
