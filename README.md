@@ -1,5 +1,5 @@
 # LaTeX resume template
-![alt text](https://raw.githubusercontent.com/jclowney/LaTeXResume/master/Smart_Twenty_Seconds_CV (1).pdf)
+![Resume Screenshot](/resume.png?raw=true "Resume Screenshot")
 This is a template I use for my own resume. I've substantially edited and merged the following templates
 
 1. [Carmine Spagnuolo's Twenty Seconds Curriculum Vitae](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex)
