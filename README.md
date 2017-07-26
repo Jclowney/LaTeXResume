@@ -5,7 +5,7 @@ This is a template I use for my own resume. I've substantially edited and merged
 1. [Carmine Spagnuolo's Twenty Seconds Curriculum Vitae](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex)
 2. [Carmine Benedetto's Smart Fancy LaTeX CV](https://github.com/neoben/smart-fancy-latex-cv)
 3. [Adrien Friggeri's Fancy CV](https://www.sharelatex.com/templates/52fb8c1f33621a613683ecad)
-4. [Smart Twenty Seconds CV]
+4. [Smart Twenty Seconds CV](https://www.sharelatex.com/templates/cv-or-resume/smart-twenty-seconds-cv)
 
 ## Installating pre-requisites (Windows)
 
@@ -32,4 +32,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
-
