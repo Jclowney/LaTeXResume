@@ -4,8 +4,7 @@
 % Version 1.0 (14/7/16)
 %
 % Original author:
-% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
-% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+% Justin Clowney
 %
 % License:
 % The MIT License (see included LICENSE file)
@@ -22,43 +21,47 @@
 \newcommand\skills{ 
 ~
 	\smartdiagram[bubble diagram]{
-        \textbf{Software}\\\textbf{Developer},
+        \textbf{Software}\\\textbf{Engineer},
         \textbf{Machine}\\\textbf{Learning},
         \textbf{~~~Full Stack~~~}\\\textbf{~~Web Dev~~},
-        \textbf{~~~~Medical~~~~}\\\textbf{Devices},
-        \textbf{~Statistical~}\\\textbf{Analysis},
+        \textbf{~~~~Micro~~~~}\\\textbf{Services},
+        \textbf{~~~~~Dev~~~~~}\\\textbf{Ops},
         \textbf{Unit}\\\textbf{~~Testing~~},
         \textbf{~~~~~~OOP~~~~~~~}
     }
 }
 
 % Programming skill bars
-\programming{{Ruby $\textbullet$ C++  $\textbullet$ MongoDB  / 3}, {Java $\textbullet$ SQL $\textbullet$ MATLAB / 3.5}, {HTML5 $\textbullet$ JS $\textbullet$ CSS / 5}}
+\programming{{ C++  $\textbullet$ MongoDB $\textbullet$ Python / 3}, {Go $\textbullet$ SQL $\textbullet$ MATLAB / 3.5}, {HTML5 $\textbullet$ JS $\textbullet$ CSS / 5}}
 
 % Projects text
 \projects{
-\textbf{Front-end}
+\textbf{Front-End}
         \\
-        ReactJS (Flux, Redux),
-        JQuery,
+        React (Redux),
+        Angular (NgRx),
         AJAX,
         SCSS/SASS,
         Bootstrap,
         Responsive Design
         \\
+        \\
         \textbf{Back-End}
         \\
-        Ruby on Rails,
+        Go (Gin),
         NodeJS (Express),
         PostgreSQL,
         Sequelize,
         Mongoose,
-        RESTful APIs,
-        Third Party APIs (Google Maps, Soundcloud, NASA)
+        REST,
+        gRPC,
+        Apache2
+        \\
         \\
         \textbf{Other}
         \\
         Git/Github,
+        Docker,
         LaTeX
 }
 
@@ -68,7 +71,7 @@
 % If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
 
 \cvname{Justin Clowney} % Your name
-\cvjobtitle{Software Developer} % Job
+\cvjobtitle{Software Engineer} % Job
 % title/career
 
 \cvlinkedin{/in/jclowney}
@@ -89,16 +92,17 @@
 \section{Education}
 
 \begin{twenty} % Environment for a list with descriptions
+% 	\twentyitem
+%     	{May 2017-}
+%     	{Aug 2017}
+%         {The Iron Yard \textnormal{- Full Stack Web Dev Coding Bootcamp}}
+%         {Houston, Texas}
+%         {}
+%         {}
+%         \\
 	\twentyitem
-    	{May 2017-}
-    	{Present}
-        {The Iron Yard \textnormal{- Full Stack Web Dev Coding Bootcamp}}
-        {Houston, Texas}
-        {}
-        {}
-	\twentyitem
-    	{2012-}
-    	{2016}
+    	{Sep 2012-}
+    	{May 2016}
         {BSc. Biomedical Engineering \textnormal{GPA: (3.3/4.0)}}
         {Texas A\&M University}
         {}
@@ -106,6 +110,57 @@
 	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
 \end{twenty}
 
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{Feb 2019 -}
+		{Present}
+        {Software Engineer}
+        {National Oilwell Varco}
+        {}
+        {\begin{itemize}
+        \item Collaborates in a multinational team to launch and support applications that are used by drilling customers around the globe
+        \item In 3 months developed a dockerized full stack application in an unfamiliar environment which was demonstrated in front of thousands of potential clients at the largest corporate event of the year
+        \item Contributed to re-factoring legacy code and redefining best practices on both the front and back end
+        \item \textbf{Tools}: Angular, Go, Docker, Typescript
+        \end{itemize}}
+        \\
+\twentyitem
+    	{Oct 2017 -}
+		{Feb 2019}
+        {Web Developer}
+        {Decode Digital}
+        {}
+        {\begin{itemize}
+        \item Builds and maintains websites (with and without CMS) for clients.
+        \item Adds new features and designs to existing websites and applications.
+        \item Develops server-side services to transfer data to and from interactive applications.
+        \item Sets up servers and domains in order to deploy websites.
+        \item Creates and maintains databases that store various types of data for use in applications.
+        \item \textbf{Tools}: Javascript, Node.js, React, MySQL, PostgreSQL, PHP, Apache2
+        \end{itemize}}
+        \\
+\twentyitem
+    	{Sep 2015 -}
+		{May 2016}
+        {Smart Intra-Venous System}
+        {{Texas A\&M University}}
+        {}
+        {\begin{itemize}
+        \item Worked in collaboration with Quest Medical Inc. to find a niche in the IV market
+        \item Programmed negative feedback system with a mass flow sensor using LabVIEW and an Arduino board
+        \item \textbf{Tools}: LabVIEW, Arduino
+        \end{itemize}}
+        \\
+        
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
 \section{Research}
 \begin{twenty}
 	\twentyitem
@@ -117,77 +172,16 @@
         {
        	\textbf{Thesis}: Efficacy of Noninvasive Glucose Sensors After Clinical Animal Trials
         {\begin{itemize}
-        \item Programmed algorithm in MATLAB for extracting two time-resolved components of a single luminescence signal acquired from sensors
-        \item Created a LabVIEW program and GUI for automatically measuring oxygen concentrations in solution using an electrode instrument
-        \item Constructed testing system and developed program for characterizing response of glucose sensors to varying continuous glucose concentrations 
-        \item \textbf{Tools}: MATLAB, LabVIEW, COMSOL, Solidworks \vspace{2mm}
+        \item Implemented theoretical algorithm in MATLAB for extracting two time-resolved components of a single luminescence signal acquired from sensors
+        \item Created a LabVIEW program for automatically measuring oxygen concentrations in solution using an electrode instrument
+        \item Developed program for characterizing response of glucose sensors to varying continuous glucose concentrations 
+        \item \textbf{Tools}: MATLAB, LabVIEW, COMSOL \vspace{2mm}
 		\end{itemize}}
         }
 \end{twenty}
-
-%----------------------------------------------------------------------------------------
-%	 EXPERIENCE
-%----------------------------------------------------------------------------------------
-
-\section{Experience}
-
-\begin{twenty} % Environment for a list with descriptions
-\twentyitem
-    	{July 2017}
-		{}
-        {Polybus - Hackathon Project}
-        {AngelHack}
-        {}
-        {\begin{itemize}
-        \item Made a full-stack application that connects medical missions in third world countries to volunteers and physicians.
-        \item \textbf{Tools}: JS, PostgreSQL, Loopback
-        \end{itemize}}
-        \\
-        \twentyitem
-    	{June 2017}
-		{}
-        {Soundcloud App}
-        {The Iron Yard}
-        {}
-        {\begin{itemize}
-        \item Practiced API calls by constructing a site that allows to search for songs by artist, and plays them back with an equalizer
-        \item \textbf{Tools}: JS, HTML, CSS
-        \end{itemize}}
-        \\
-\twentyitem
-    	{Sep 2015 -}
-		{May 2016}
-        {Smart Intra-Venous System}
-        {{Texas A\&M University}}
-        {}
-        {\begin{itemize}
-        \item Worked in collaboration with Quest Medical Inc. to find a niche in the IV market
-        \item Integrated a mass flow sensor, stepper motor, Arduino board, and a custom 3D printed case
-        \item Programmed negative feedback system using LabVIEW and an Arduino board
-        \item Utilized Agile methodology to mediate the design process. Maintained a Design History File to illustrate version history control.
-        \item \textbf{Tools}: LabVIEW, Arduino, Solidworks
-        \end{itemize}}
-        \\
-	\twentyitem
-    	{Oct 2014}
-		{}
-        {Optical Heart Rate Monitor}
-        {Texas A\&M University}
-        {}
-        {
-        {\begin{itemize}
-        \item Constructed a functional pulse oximeter to measure heart rate
-        \item Designed and soldered a circuit that takes the raw signal from a photodiode, filter out specific ranges of frequencies, and amplify the rest in order to have an LED solely light up with each heart beat
-        \\
-    \end{itemize}}
-        }
-        
-	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
-\end{twenty}
-\section{Leadership}
+\section{Awards}
 \begin{twenty}
-\twentyitem{2015-2016}{}{President}{Council of Undergraduate Research in Engineering}{}{}
-\twentyitem{2015-2016}{}{Treasurer}{Engineering World Health}{}{}
-\twentyitem{2014-2015}{}{Treasurer}{Council of Undergraduate Research in Engineering}{}{}
+\twentyitem{2018}{}{Crystal Award, Bronze ADDY}{Decode Holiday Card}{}{}
+\twentyitem{2018}{}{Crystal Award}{Team Industrial Website}{}{}
 \end{twenty}
-\end{document} 
+\end{document}
